@@ -1,0 +1,78 @@
+.events {
+    padding: 20px;
+    .cntnr {
+        width: 1200px;
+        margin: 0 auto;
+        max-width: 100%;
+        .evnt-wrp {
+            gap: 35px;
+            display: grid;
+            margin: 10px 0;
+            grid-template-columns: repeat(4,1fr);
+            .evnt {
+                // width: 275px;
+                padding: 20px 0;
+                padding-bottom: 30px;
+                border-radius: 20px 0;
+                box-shadow: 0 0 3px rgba($color: #000000, $alpha: .2);
+                .evn-icn {
+                    width: 100px;
+                    height: 100px;
+                    padding: 20px;
+                    margin: 0 auto;
+                    display: block;
+                    text-decoration: none;
+                    transition: all linear 0.2s;
+                    img {
+                        width: 100%;
+                    }
+                }
+                h3 {
+                    color: black;
+                    font-size: 16px;
+                    margin-bottom: 0;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+// Media Query <Start> //
+@media (max-width:991px) {
+    .events {
+        .cntnr {
+            .evnt-wrp {
+                grid-template-columns: repeat(3,1fr);
+            }
+        }
+    }
+}
+// Media Query <end> //
+
+// Media Query <Start> //
+@media (max-width:640px) {
+    .events {
+        .cntnr {
+            .evnt-wrp {
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+    }
+}
+// Media Query <end> //
+
+// Media Query <Start> //
+@media (max-width:480px) {
+    .events {
+        .cntnr {
+            .evnt-wrp {
+                grid-template-columns: repeat(1,1fr);
+            }
+        }
+    }
+}
+// Media Query <end> //
+
+// Media Query <Start> //
+@media (max-width:320px) {}
+// Media Query <end> //

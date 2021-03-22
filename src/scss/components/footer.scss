@@ -1,0 +1,193 @@
+.ftr-tp {
+    padding: 15px;
+    text-align: center;
+    background-color: #f2f2f2;
+    .cntnr {
+        width: 100%;
+        margin: 0 auto;
+        max-width: 1200px;
+        padding: 0;
+        p {
+            margin: 0;
+            font-size: 14px;
+        }
+    }
+}
+
+.footer {
+    padding: 15px 0;
+    background-color: #282828;
+    .cntnr {
+        width: 100%;
+        margin: 0 auto;
+        max-width: 1200px;
+        padding: 0;
+        p{
+            color: white;
+        }
+        .ftr-wrp {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            border-bottom: 1px solid rgba($color: white, $alpha: 0.3);
+            .ftr {
+                width: 180px;
+                padding: 15px;
+                h2{
+                    font-size: 20px;
+                    margin-top: 0;
+                    color: white;
+                }
+                a {
+                    font-size: 13px;
+                    color: white;
+                    padding: 5px 0;
+                    display: inline-block;
+                    text-decoration: none;
+                    transition: all linear 0.2s;
+                    &:hover {
+                        padding-left: 4px;
+                        color: #FD2E3D;
+                    }
+                }
+                
+            }
+            .text {
+                width: 300px;
+                padding: 15px;
+                h2 {
+                    font-size: 20px;
+                    margin-top: 0;
+                    color: white;
+                }
+                p {
+                    color: white;
+                    font-size: 13px;
+                }
+            }
+        }
+        .clsng-ftr {
+            padding: 15px;
+            padding-bottom: 0;
+            p{
+                margin: 0;
+                text-align: center;
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+// MEDIA QUERY //
+
+@media (max-width:991px) {
+    .ftr-tp {
+        text-align: center;
+    }
+    
+    .footer {
+        .cntnr {
+            .ftr-wrp {
+                .text {
+                    width: 400px;
+                    h2 {
+                        margin-top: 0;
+                        color: white;
+                    }
+                    p {
+                        color: white;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+// MEDIA QUERY (640px) //
+@media (max-width:640px) {}
+
+// MEDIA QUERY (480px) //
+@media(max-width:480px) {
+    .footer {
+        // width: 100%;
+        // padding: 4px;
+        .cntnr {
+            .ftr-wrp {
+                display: flex;
+                flex-wrap: wrap;
+                border-bottom: 1px solid rgba($color: white, $alpha: 0.3);
+                .ftr {
+                    width: 140px;
+                    h2{
+                        margin-top: 0;
+                        color: white;
+                    }
+                    .deal {
+                        font-size: 14px;
+                        color: white;
+                        line-height: 30px;
+                        text-decoration: none;
+                        transition: all linear 0.2s;
+                        &:hover {
+                            padding-left: 8px;
+                        }
+                    }
+                }
+                .text {
+                    width: 328px;
+                    h2 {
+                        margin-top: 0;
+                        color: white;
+                    }
+                    p {
+                        color: white;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// MEDIA QUERY //
+@media (max-width:320px) {
+    .footer {
+        // width: 100%;
+        // padding: 4px;
+        .cntnr {
+            .ftr-wrp {
+                display: flex;
+                flex-wrap: wrap;
+                border-bottom: 1px solid rgba($color: white, $alpha: 0.3);
+                .ftr {
+                    width: 130px;
+                    h2{
+                        margin-top: 0;
+                        color: white;
+                    }
+                    .deal {
+                        font-size: 14px;
+                        color: white;
+                        line-height: 30px;
+                        text-decoration: none;
+                        transition: all linear 0.2s;
+                        &:hover {
+                            padding-left: 8px;
+                        }
+                    }
+                }
+                .text {
+                    width: 328px;
+                    h2 {
+                        margin-top: 0;
+                        color: white;
+                    }
+                    p {
+                        color: white;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}

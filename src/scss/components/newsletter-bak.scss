@@ -1,0 +1,104 @@
+.nws-ltr {
+    // height: 250px;
+    .cntnr {
+        width: 1200px;
+        max-width: 100%;
+        margin: 0 auto;
+        .nwsltr {
+            // width: 100%;
+            flex: 1;
+            border-radius: 10px;
+            background-size: cover;
+            svg {
+                width: 100%;
+            }
+            .nws-wrpr {
+                .nws-img {
+                    padding: 10px;
+                    img {
+                        width: 229px;
+                        height: auto;
+                    }
+                }
+                .contnt {
+                    width: 100%;
+                    .srch {
+                        display: flex;
+                        padding-right: 72px;
+                        justify-content: flex-end;
+                        .srch-bar {
+                            border: 0;
+                            outline: 0;
+                            width: 500px;
+                            padding: 15px;
+                            font-size: 15px;
+                            background-color: white;
+                            border-radius: 10px 0 0 10px;
+                        }
+                        .src-btn {
+                            color: white;
+                            padding: 15px;
+                            margin-left: -30px;
+                            border-radius: 5px;
+                            text-decoration: none;
+                            background-color: #fd2e3d;
+                        }
+                    }
+                    p {
+                        margin: 0;
+                        padding: 15px 0;
+                        font-size: 18px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:991px) {
+    .nws-ltr {
+        // height: 250px;
+        .cntnr {
+            width: 1200px;
+            max-width: 100%;
+            margin: 0 auto;
+            .nwsltr {
+                width: 70%;
+                height: 250px;
+                border-radius: 10px;
+                background-size: cover;
+                svg {
+                    width: 100%;
+                }
+                .srch {
+                    .srch-bar {
+                        border: 0;
+                        outline: 0;
+                        width: 500px;
+                        padding: 15px;
+                        font-size: 15px;
+                        background-color: white;
+                        border-radius: 10px 0 0 10px;
+                    }
+                    .src-btn {
+                        color: white;
+                        margin-left: -20px;
+                        padding: 20px;
+                        border-radius: 3px ;
+                        text-decoration: none;
+                        background-color: #fd2e3d;
+                    }
+                }
+                p {
+                    margin: 0;
+                    display: flex;
+                    padding: 15px 0;
+                    font-size: 18px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

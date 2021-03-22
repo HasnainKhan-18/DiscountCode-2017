@@ -1,0 +1,315 @@
+.cpopup {
+    padding: 20px;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow-y: auto;
+    .cpopov {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(black, 0.60);
+    }
+    .cntnr{
+        width: 800px;
+        margin: 0 auto;
+        max-width: 100%;
+        position: relative;
+        .popup {
+            // width: 65%;
+            border-radius: 20px 0;
+            background-color: white;
+            .sd-wrp {
+                display: flex;
+                .side1{
+                    // width: 38%;
+                    display: flex;
+                    padding: 135px 80px;
+                    align-items: center;
+                    border-radius: 20px 0;
+                    justify-content: center;
+                    background-color: #FD2E3D;
+                    .closes {
+                        top: 0px;
+                        right: 20px;
+                        position: absolute;
+                        margin: 0;
+                        padding: 0;
+                        border: none;
+                        display: flex;
+                        outline: none;
+                        color: white;
+                        height: 2px;
+                        font-size: 40px;
+                        cursor: pointer;
+                        background: none;
+                    }
+                    .pop-img {
+                        width: 120px;
+                        height: 120px;
+                        padding: 20px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 10px 0;
+                        background-color: white;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+                .side2{
+                    padding: 20px;
+                    position: relative;
+                    .closed {
+                        top: -20px;
+                        right: -30px;
+                        position: absolute;
+                        margin: 0;
+                        padding: 0;
+                        border: none;
+                        display: flex;
+                        outline: none;
+                        color: #FD2E3D;
+                        height: 2px;
+                        font-size: 40px;
+                        cursor: pointer;
+                        background: none;
+                        // font-weight: 700;
+                        align-items: center;
+                        justify-content: flex-end;
+                    }
+                    .pop-up {
+                        // width: 420px;
+                        h1 {
+                            font-size: 20px;
+                            text-align: center;
+                        }
+                        hr {
+                            border: 0;
+                            // width: 285px;
+                            height: 1px;
+                            background-color: lightgray;
+                        }
+                        p {
+                            text-align: center;
+                        }
+                        .input {
+                            display: flex;
+                            // flex-wrap: wrap;
+                            .code {
+                                flex: 1;
+                                outline: none;
+                                padding: 15px;
+                                font-size: 18px;
+                                text-align: center;
+                                border-radius: 10px;
+                                border: 3px solid #FFC039;
+                            }
+                            .cpy-btn {
+                                width: 110px;
+                                border: none;
+                                outline: none;
+                                padding: 18px;
+                                color: white;
+                                font-size: 18px;
+                                cursor: pointer;
+                                margin-left: -80px;
+                                text-align: center;
+                                border-radius: 10px;
+                                text-decoration: none;
+                                background-color: #FD2E3D;
+                            }
+                        }
+                        .btn {
+                            flex: 1;
+                            padding: 15px;
+                            color: white;
+                            font-weight: 700;
+                            border: 0;
+                            width: 100%;
+                            outline: none;
+                            cursor: pointer;
+                            border-radius: 5px;
+                            text-align: center;
+                            background-color: #FFC039;
+                        }
+                        .txt-wrp {
+                            display: flex;
+                            justify-content: space-between;
+                        }
+                        .list {
+                            margin-bottom: 0;
+                            padding-left: 20px;
+                            li {
+                                padding: 3px 0;
+                                list-style-type: decimal;
+                            }
+                        }
+                        h4 {
+                            margin-bottom: 0;
+                            font-size: 16px;
+                        }
+                        .t-wrp {
+                            color: black;
+                            text-align: center;
+                            text-decoration: none;
+                            h5 {
+                                margin: 0;
+                            }
+                        }
+                        h3 {
+                            margin-bottom: 0;
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:991px) {
+    .cpopup {
+        .cntnr{
+            .popup {
+                .sd-wrp {
+                    display: flex;
+                    flex-direction: column;
+                    .side1{
+                        padding: 30px 50px;
+                        flex-direction: column;
+                        .closed {
+                            display: block;
+                        }
+                        .pop-img {
+                            width: 100px;
+                            height: 100px;
+                            padding: 20px;
+                        }
+                    }
+                    .side2{
+                        .closed {
+                            display: none;
+                        }
+                        .cls-wrp {
+                            display: none;
+                        }
+                        .pop-up {
+                            .input {
+                                display: flex;
+                                // flex-wrap: wrap;
+                                .code {
+                                    flex: 1;
+                                    outline: none;
+                                    padding: 15px;
+                                    font-size: 18px;
+                                    text-align: center;
+                                    border-radius: 10px;
+                                    border: 3px solid #FFC039;
+                                }
+                                .cpy-btn {
+                                    margin-left: -50px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media(max-width:640px) {}
+
+
+
+@media(max-width:480px) {
+    .cpopup {
+        .cntnr{
+            .popup {
+                .sd-wrp {
+                    .side1{
+                        .closes {
+                            font-size: 30px;
+                        }
+                        .pop-img {
+                            width: 80px;
+                            height: 80px;
+                        }
+                    }
+                    .side2 {
+                        .pop-up {
+                            h1 {
+                                font-size: 14px;
+                            }
+                            p {
+                                font-size: 12px;
+                            }
+                            .input {
+                               display: flex;
+                               align-items: center;
+                               justify-content: center;
+                               flex-direction: column;
+                               .code {
+                                   width: 120px;
+                               }
+                                .cpy-btn {
+                                   margin-left: 0;
+                                   margin: 10px 0;
+                                }
+                            }
+                            .list {
+                               font-size: 14px;
+                            }
+                            h4 {
+                                font-size: 14px;
+                            }
+                            h3 {
+                               font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+@media(max-width:320px) {
+    .cpopup {
+        .cntnr{
+            .popup {
+                .sd-wrp {
+                    .side1{
+                        .closes {
+                            font-size: 30px;
+                            right: 10px;
+                        }
+                        .pop-img {
+                            width: 80px;
+                            height: 80px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,105 @@
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.header {
+    padding: 20px;
+    .cntnr {
+        width: 1200px;
+        margin: 0 auto;
+        max-width: 100%;
+        padding: 0;
+        .wrpr {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .logo {
+                width: 150px;
+                img {
+                    width: 100%;
+                }
+            }
+            .nav-links {
+                display: flex;
+                .lnks {
+                    color: grey;
+                    padding: 10px 15px;
+                    border-radius: 50px;
+                    margin: 0 15px;
+                    text-decoration: none;
+                    background-color: white;
+                    transition: all linear 0.2s;
+                    border: 1px solid grey;
+                    &:hover {
+                        color: white;
+                        border: 1px solid #fd2e3d;
+                        background-color: #fd2e3d;
+                    }
+                }
+            }
+            .mnu-icn {
+                width: 30px;
+                height: 30px;
+                padding: 10px;
+                border-radius: 50%;
+                display: none;
+                text-decoration: none;
+                img {
+                    width: 100%;
+                    margin-top: 3px;
+                }
+            }
+        }
+    }
+}
+
+
+// Media Query //
+@media (max-width:991px) {
+    .header {
+        .cntnr {
+            .wrpr {
+                .nav-links {
+                    display: none;
+                }
+                .mnu-icn {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+// Media Query 640px //
+@media (max-width:640px) {}
+
+// Media Query 480px //
+@media (max-width:480px) {
+    .header {
+        .cntnr {
+            .wrpr {
+                .logo {
+                    width: 130px;
+                }
+            }
+        }
+    }
+}
+
+// Media Query 320 //
+@media (max-width:320px) {
+    .header {
+        .cntnr {
+            .wrpr {
+                .logo {
+                    width: 100px;
+                }
+            }
+        }
+    }
+}

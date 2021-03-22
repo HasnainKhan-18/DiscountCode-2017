@@ -1,0 +1,21 @@
+@import "../components/header2.scss";
+@import "../components/contact-us.scss";
+@import "../components/footer.scss";
+
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    src: url("/assets/fonts/rubik-light.woff2");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    src: url("/assets/fonts/rubik-bold.woff2");
+    font-weight: 700;
+}
+
+body {
+    font-family: Rubik, sans-serif;
+}

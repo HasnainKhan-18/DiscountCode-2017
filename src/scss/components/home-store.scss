@@ -1,0 +1,36 @@
+.br-str {
+    text-align: center;
+    padding: 10px;
+    .cntnr {
+        width: 100%;
+        margin: 0 auto;
+        max-width: 1200px;
+        padding: 0;
+        h2 {
+            color: black;
+            margin: 30px 0;
+        }
+        .ltrs {
+            border-radius: 10px 0;
+            box-shadow: 0 0 5px rgba($color: #000000, $alpha: 0.3);
+            a {
+                color: black;
+                padding: 13px 14px;
+                font-weight: 700;
+                display: inline-block;
+                text-decoration: none;
+                transition: all linear 0.1s;
+                &:hover {
+                    color: #fd2e3d;
+                }
+            }
+        }
+    }
+}
+
+// Media Query //
+@media(max-width:991px) {
+    .br-str {
+        display: none;
+    }
+}

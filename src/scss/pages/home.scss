@@ -1,0 +1,28 @@
+@import "../components/header.scss";
+@import "../components/banner.scss";
+@import "../components/ad.scss";
+@import "../components/footer.scss";
+@import "../components/newsletter.scss";
+@import "../components/terms-popup.scss";
+@import "../components/home-store.scss";
+@import "../components/popular-ctgry.scss";
+@import "../components/coupons-cards.scss";
+
+
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    src: url("../fonts/rubik-light.woff2");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    src: url("../fonts/rubik-bold.woff2");
+    font-weight: 700;
+}
+
+body {
+    font-family: Rubik, sans-serif;
+}

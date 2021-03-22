@@ -1,0 +1,127 @@
+.banner {
+    width: 100%;
+    height: 540px;
+    // background-attachment: fixed;
+    background-size: cover;
+    .cntnr {
+        width: 1200px;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0;
+        // padding: 5px 15px;
+        .bnr-wrp {
+            h1 {
+                width: 0;
+                margin: 0;
+                margin-top: 0;
+                color: white;
+                font-size: 45px;
+                padding-left: 20px;
+            }
+            .src-wrp {
+                display: flex;
+                padding: 20px;
+                align-items: center;
+                .srchbr {
+                    // flex: 1;
+                    width: 480px;
+                    border: 0;
+                    outline: none;
+                    font-size: 16px;
+                    padding: 18px;
+                    border-radius: 50px;
+                }
+                .srchbtn {
+                    width: 25px;
+                    height: 25px;
+                    padding: 10px;
+                    fill: white;
+                    margin-left: -50px;
+                    border-radius: 50%;
+                    background-color: #ffc039;
+                    svg {
+                        width: 85%;
+                    }
+                }
+            }
+        }
+        .crd-wrp {
+            display: flex;
+            padding: 30px 0;
+            padding-top: 10px;
+            padding-left: 20px;
+            .crd {
+                width: 100px;
+                height: 100px;
+                padding: 20px;
+                margin-right: 20px;
+                border-radius: 5px;
+                background-color: white;
+                transition: all linear 0.2s;
+                img {
+                    width: 100%;
+                }
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+            
+        }
+    }
+}
+
+
+@media(max-width:991px) {
+    .banner {
+        .cntnr {
+            h1 {
+                font-size: 42px;
+            }
+            .bnr-wrp {
+                .src-wrp {
+                    .srchbr {
+                        flex: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+// Media Query //
+
+// Media Query //
+@media(max-width:640px) {}
+// Media Query //
+
+// Media Query //
+@media(max-width:480px) {
+    .banner {
+        height: 450px;
+        .cntnr {
+            .crd-wrp {
+                .crd {
+                    width: 80px;
+                    height: 80px;
+                }
+                
+            }
+        }
+    }
+}
+// Media Query //
+
+// Media Query //
+@media(max-width:320px) {
+    .banner {
+        .cntnr {
+            .crd-wrp {
+                .crd {
+                    width: 100px;
+                    height: 80px;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+}
+// Media Query //

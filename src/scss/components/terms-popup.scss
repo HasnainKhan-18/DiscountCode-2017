@@ -1,0 +1,57 @@
+.tpopup {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 15px;
+    display: flex;
+    margin: 0 auto;
+    position: fixed;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    .tpopov {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        position: fixed;
+    }
+    .cntnr {
+        width: 350px;
+        padding: 20px;
+        margin: 0 auto;
+        border-radius: 20px 0;
+        background-color: white;
+        .m-top {
+            display: flex;
+            align-items: center;
+            padding-bottom: 3px;
+            margin-bottom: 5px;
+            justify-content: space-between;
+            border-bottom: 1px solid rgba($color: #000000, $alpha: .4);
+            h2 {
+                margin: 0;
+                font-size: 15px;
+                color: #FD2E3D;
+            }
+            .closed {
+                border: none;
+                outline: none;
+                color: #FD2E3D;
+                font-size: 30px;
+                cursor: pointer;
+                background: none;
+                text-decoration: none;
+            }
+        }
+        .list {
+            margin: 0;
+            padding-left: 15px;
+            font-size: 14px;
+        }
+        li {
+            padding: 3px 0;
+        }
+    }
+}
